@@ -1,0 +1,15 @@
+@import '_menu';
+@import '_header';
+@import'_header2';
+@import'_header_3gallery';
+@import'_header 4';
+@import'_header5';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}

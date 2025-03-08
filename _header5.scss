@@ -1,0 +1,38 @@
+.row{
+    display: flex;
+    gap: 90px;
+    padding-top: 200px;
+}
+.header7{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(Top-10-best-vfx-companies-Vitrina-AI-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}.row{
+    h1{
+        color: rgb(165, 15, 235);
+    }
+    p{
+        color: azure;
+    }
+    h5{
+        color: azure;
+    }
+}
+.icons{
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+.help{
+    line-height: 30px;
+}
+.about{
+    line-height: 30px;
+}
+.conect{
+    line-height: 30px;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,353 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+  position: relative;
+  z-index: 999;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+button {
+  padding: 5px 20px;
+  border: none;
+  position: relative;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.Register {
+  background-color: rgb(123, 4, 179);
+  color: azure;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.header1 h1 {
+  font-size: 3.5rem;
+  color: rgb(165, 15, 235);
+}
+
+h2 {
+  font-size: 2rem;
+  color: azure;
+}
+
+.header1 {
+  padding-top: 50px;
+  max-width: 600px;
+}
+
+.header1 p {
+  max-width: 450px;
+  color: azure;
+  margin-block: 40px;
+}
+
+.header1 button {
+  background-color: rgb(165, 15, 235);
+  color: azure;
+  padding: 8PX 20PX;
+  border-radius: 10px;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(mcus-new-avengers-team-to-be-introduced-before-avengers-the-kang-dynasty-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 10%;
+  width: 500px;
+  height: 100%;
+  background-image: url(2ad17d5e73500c0f1874bc3a7d6fb487.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(20% 0%, 100% 0, 79% 100%, 0% 100%);
+          clip-path: polygon(20% 0%, 100% 0, 79% 100%, 0% 100%);
+}
+
+.heading {
+  text-align: center;
+  padding-top: 40px;
+  color: rgb(165, 15, 235);
+}
+
+.heading p {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+}
+
+.card_row {
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.card_inner_front img, .card .card_inner .card_inner_back img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  perspective: 1000px;
+  text-align: center;
+}
+.card h2 {
+  color: rgb(165, 15, 235);
+}
+.card p {
+  color: azure;
+}
+.card:hover .card_inner {
+  transform: rotateY(180deg);
+}
+.card .card_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+.card .card_inner:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(red, rgb(0, 4, 255), rgb(255, 87, 199), yellow);
+  inset: -0.5rem;
+  z-index: -1;
+  filter: blur(2rem);
+}
+.card .card_inner .card_inner_front, .card .card_inner .card_inner_back {
+  background-color: rgb(37, 37, 37);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.card .card_inner .card_inner_back {
+  transform: rotateY(180deg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(27, 27, 27);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.card .card_inner .card_inner_back button {
+  padding: 8px 60px;
+  border-radius: 10px;
+  background-color: rgb(165, 15, 235);
+  color: azure;
+}
+
+.header2 {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(thequint_2018-04_867e808f-f6ef-451b-8c02-9fb07afd0173_avengers_infinity_war.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  grid-auto-rows: max-content;
+  padding-top: 60px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+}
+
+.gallery2 {
+  grid-column: span 2;
+}
+
+.gallery3 {
+  grid-column: span 2;
+}
+
+.gallery7 {
+  grid-column: span 3;
+}
+
+.text_row {
+  text-align: center;
+  padding-top: 50px;
+}
+.text_row h4 {
+  font-size: 2.5rem;
+  color: rgb(165, 15, 235);
+}
+.text_row p {
+  font-size: 1.3rem;
+  color: azure;
+}
+
+.header3_gallery {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(Thor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.gallery div {
+  position: relative;
+}
+
+.gallery h5 {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(240, 255, 255, 0.39);
+  top: 80%;
+  left: 0%;
+  width: 100%;
+  min-height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  font-family: list-separator;
+  color: rgb(255, 255, 255);
+}
+
+.pic {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.pic img {
+  height: 300px;
+  margin-top: 150px;
+  animation: rotation 10s infinite alternate-reverse;
+}
+
+.header6 {
+  display: flex;
+  gap: 250px;
+}
+
+.header5 {
+  margin-top: 100px;
+  max-width: 800px;
+  padding-top: 80px;
+}
+.header5 p {
+  color: azure;
+}
+.header5 h1 {
+  color: rgb(165, 15, 235);
+  font-size: 3.5rem;
+}
+
+.hero2 {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(Thor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.row {
+  display: flex;
+  gap: 90px;
+  padding-top: 200px;
+}
+
+.header7 {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(Top-10-best-vfx-companies-Vitrina-AI-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.row h1 {
+  color: rgb(165, 15, 235);
+}
+.row p {
+  color: azure;
+}
+.row h5 {
+  color: azure;
+}
+
+.icons {
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+.help {
+  line-height: 30px;
+}
+
+.about {
+  line-height: 30px;
+}
+
+.conect {
+  line-height: 30px;
+  font-size: 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
